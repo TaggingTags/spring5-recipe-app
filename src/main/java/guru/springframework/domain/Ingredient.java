@@ -8,7 +8,7 @@ public class Ingredient {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private Long id;
     private String description ;
     private BigDecimal amount;
 
@@ -19,11 +19,11 @@ public class Ingredient {
     private Recipe recipe;
 
     public Long getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Long id) {
-        Id = id;
+        id = id;
     }
 
     public String getDescription() {
@@ -48,5 +48,13 @@ public class Ingredient {
 
     public void setRecipe(Recipe recipe) {
         this.recipe = recipe;
+    }
+
+    public UnitMeasure getUom() {
+        return uom;
+    }
+
+    public void setUom(UnitMeasure uom) {
+        this.uom = uom;
     }
 }
