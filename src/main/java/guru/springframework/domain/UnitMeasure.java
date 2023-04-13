@@ -10,9 +10,6 @@ public class UnitMeasure {
     private Long id;
     private String description;
 
-    @OneToOne
-    private Ingredient ingredient;
-
     public Long getId() {
         return id;
     }

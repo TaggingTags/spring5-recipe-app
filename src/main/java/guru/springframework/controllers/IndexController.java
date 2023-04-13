@@ -28,8 +28,8 @@ public class IndexController {
         Optional<Category> categoryOptional = categoryRepository.findByDescription("American");
         Optional<UnitMeasure> unitMeasureOptional = unitMeasureRepository.findByDescription("Teaspoon");
 
-        System.out.println("cat ID : " + categoryOptional.get() +
-                            "UOM ID : " + unitMeasureOptional.get());
+        System.out.println("cat ID : " + categoryOptional.get().getId() +
+                            "UOM ID : " + unitMeasureOptional.get().getId());
         return "index";
     }
 }
