@@ -29,7 +29,7 @@ public class IndexController {
     public String getIndexPage(Model model){
         log.debug("before request");
 
-        model.addAttribute("recepies" ,recipeService.getRecipes());
+        model.addAttribute("recipes" ,recipeService.getRecipes());
 
         log.debug("after request");
 
